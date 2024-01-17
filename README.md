@@ -1,4 +1,4 @@
-# Cracking
+# Crack them all
 
 ## Table of contents
 
