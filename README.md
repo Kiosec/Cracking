@@ -8,7 +8,7 @@
 * [2. Online cracking databases](#online-cracking-databases)
 * [3. Common dictionnaries](#common-dictionnaries)
 
-##### ➤ Wordlist creation
+##### ➤ Wordlist generator
 
 * [1. Generate username list using username_generator](#generate-username-list-using-username-generator)
 * [2. CUPP - Common User Password Profiler](#cupp---common-user-password-profiler)
@@ -38,7 +38,7 @@ https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Database
 
 
 # 
-# ⭕ Customized lists generation
+# ⭕ Wordlist generator
 
 ## 🔻Generate username list using username_generator
 ```
