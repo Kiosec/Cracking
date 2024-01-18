@@ -220,9 +220,13 @@ kiosec@cyberlab$  cewl -w list.txt -d 5 -m 5 http://mycyberlab.com
 , - upper case alpha characters
 % - numeric characters
 ^ - special characters including space
+2 - the first number is the minimum length of the generated password
+2 - the second number is the maximum length of the generated password
+01234abc - is the character set to use to generate the passwords
+-o list.txt - saves the output to the 3digits.txt file
 
 #Example 01:
-kiosec@cyberlab$crunch 2 2 01234abcd -o crunch.txt
+kiosec@cyberlab$  crunch 2 2 01234abcd -o crunch.txt
 kiosec@cyberlab$ cat crunch.txt
 00
 ..
