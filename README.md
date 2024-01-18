@@ -9,16 +9,21 @@
 
 ##### ➤ Wordlist generator
 
+* [0. Basic wordlist creation commands](#basic-wordlist-creation-commands)
 * [1. Generate username list using username_generator](#generate-username-list-using-username-generator)
 * [2. CUPP - Common User Password Profiler](#cupp---common-user-password-profiler)
-* [3. Generate passwords list using Crunch](#generate-passwords-list-using-crunch)
+* [3. Generate wordlist based on website content](#generate-wordlist-based-on-website-content)
+* [4. Generate passwords list using Crunch](#generate-passwords-list-using-crunch)
+* [5. Generate passwords list using John](#generate-passwords-list-using-john) 
 
 ##### ➤ Online cracking databases
 
 * [1. Online cracking databases](#online-cracking-databases)
 
+
 # 
 # ⭕ Existing dictionnaries and password lists
+
 
 ## 🔻Default passwords
 
@@ -27,7 +32,6 @@
 | https://cirt.net/passwords | |
 | https://default-password.info/ | |
 | https://datarecovery.com/rd/default-passwords/ | |
-
 
 
 ## 🔻Common dictionnaries
@@ -48,6 +52,17 @@
 
 # 
 # ⭕ Wordlist generator
+
+
+## 🔻Basic wordlist creation commands
+```
+#Combined multiples password list
+kiosec@cyberlab$  cat file1.txt file2.txt file3.txt > combined_list.txt
+
+#Clean up the generated combined list to remove duplicated words
+kiosec@cyberlab$  sort combined_list.txt | uniq -u > cleaned_combined_list.txt
+```
+
 
 ## 🔻Generate username list using username_generator
 ```
@@ -185,6 +200,17 @@ user@thm$  python3 cupp.py -a
 ```
 
 
+## 🔻Generate wordlist based on website content
+```
+#Generate a list based on website 
+-w will write the contents to a file. In this case, list.txt.
+-m 5 gathers strings (words) that are 5 characters or more
+-d 5 is the depth level of web crawling/spidering (default 2)
+
+user@thm$ cewl -w list.txt -d 5 -m 5 http://mycyberlab.com
+```
+
+
 ## 🔻Generate passwords list using Crunch
 ```
 #Definition
@@ -208,6 +234,11 @@ pass02
 pass03
 <...>
 ```
+
+## 🔻Generate passwords list using John
+
+
+
 
 # 
 # ⭕ Online cracking databases
