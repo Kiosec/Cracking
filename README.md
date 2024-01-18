@@ -241,9 +241,58 @@ pass03
 <...>
 ```
 
+
 ## 🔻Generate passwords list using John
 
+#### Display all rules based
+```
+#The rules are location into /etc/john/john.conf or /opt/john/john.conf
+kiosec@cyberlab$ cat /etc/john/john.conf|grep "List.Rules:" | cut -d"." -f3 | cut -d":" -f2 | cut -d"]" -f1 | awk NF
+JumboSingle
+o1
+o2
+i1
+i2
+o1
+i1
+o2
+i2
+best64
+d3ad0ne
+dive
+InsidePro
+T0XlC
+rockyou-30000
+specific
+ShiftToggle
+Split
+Single
+Extra
+OldOffice
+Single-Extra
+Wordlist
+ShiftToggle
+Multiword
+best64
+Jumbo
+KoreLogic
+T9
+```
 
+#### Applied a john' rules base on an existing wordlist
+```
+#Create a wordlist with only one password and expand it using a john rule based
+--wordlist= to specify the wordlist or dictionary file. 
+--rules to specify which rule or rules to use.
+--stdout to print the output to the terminal.
+kiosec@cyberlab$ john --wordlist=/tmp/my-single-password-list.txt --rules=KoreLogic --stdout
+<...>
+```
+
+#### Create a new john' rules base
+```
+WIP
+```
 
 
 # 
