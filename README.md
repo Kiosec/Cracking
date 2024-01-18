@@ -143,7 +143,7 @@ kiosec@cyberlab$   python3 cupp.py -i
 
 #### Generate a wordlist based on the categories
 ```
-ser@thm$  python3 cupp.py -l
+kiosec@cyberlab$  python3 cupp.py -l
  ___________
    cupp.py!                 # Common
       \                     # User
@@ -179,9 +179,11 @@ ser@thm$  python3 cupp.py -l
 Based on your interest, you can choose the wordlist from the list above to aid in generating wordlists for brute-forcing!
 
 Finally, CUPP could also provide default usernames and passwords from the Alecto database by using the -a option. 
+```
 
-CUPP
-user@thm$  python3 cupp.py -a
+#### Parse default usernames and passwords directly from Alecto DB.
+```
+kiosec@cyberlab$  python3 cupp.py -a
  ___________
    cupp.py!                 # Common
       \                     # User
@@ -207,7 +209,7 @@ user@thm$  python3 cupp.py -a
 -m 5 gathers strings (words) that are 5 characters or more
 -d 5 is the depth level of web crawling/spidering (default 2)
 
-user@thm$ cewl -w list.txt -d 5 -m 5 http://mycyberlab.com
+kiosec@cyberlab$  cewl -w list.txt -d 5 -m 5 http://mycyberlab.com
 ```
 
 
