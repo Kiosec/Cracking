@@ -5,14 +5,17 @@
 ##### ➤ Existing dictionnaries and password lists
 
 * [1. Default passwords](#default-passwords)
-* [2. Online cracking databases](#online-cracking-databases)
-* [3. Common dictionnaries](#common-dictionnaries)
+* [2. Common dictionnaries](#common-dictionnaries)
 
 ##### ➤ Wordlist generator
 
 * [1. Generate username list using username_generator](#generate-username-list-using-username-generator)
 * [2. CUPP - Common User Password Profiler](#cupp---common-user-password-profiler)
 * [3. Generate passwords list using Crunch](#generate-passwords-list-using-crunch)
+
+##### ➤ Online cracking databases
+
+* [1. Online cracking databases](#online-cracking-databases)
 
 # 
 # ⭕ Existing dictionnaries and password lists
@@ -25,12 +28,7 @@
 | https://default-password.info/ | |
 | https://datarecovery.com/rd/default-passwords/ | |
 
-## 🔻Online cracking databases
 
-| URL | Description |
-| --- | --- |
-| https://crackstation.net/ | |
-| https://ntlm.pw/ | |
 
 ## 🔻Common dictionnaries
 
@@ -210,3 +208,13 @@ pass02
 pass03
 <...>
 ```
+
+# 
+# ⭕ Online cracking databases
+
+## 🔻Online cracking databases
+
+| URL | Description |
+| --- | --- |
+| https://crackstation.net/ | |
+| https://ntlm.pw/ | |
