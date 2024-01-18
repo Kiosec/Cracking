@@ -128,7 +128,7 @@ kiosec@cyberlab$   python3 cupp.py -i
 > Hyperspeed Print? (Y/n)
 ```
 
-#### Generate a wordlist based on the LANG
+#### Generate a wordlist based on the categories
 ```
 ser@thm$  python3 cupp.py -l
  ___________
