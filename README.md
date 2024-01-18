@@ -25,7 +25,8 @@ https://datarecovery.com/rd/default-passwords/
 
 ## 🔻Online cracking databases
 
-
+https://crackstation.net/
+https://ntlm.pw/
 
 ## 🔻Common dictionnaries
 
