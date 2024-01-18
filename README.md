@@ -19,23 +19,33 @@
 
 ## 🔻Default passwords
 
-https://cirt.net/passwords
-https://default-password.info/
-https://datarecovery.com/rd/default-passwords/
+| URL | Description |
+| --- | --- |
+| https://cirt.net/passwords | |
+| https://default-password.info/ | |
+| https://datarecovery.com/rd/default-passwords/ | |
 
 ## 🔻Online cracking databases
 
-https://crackstation.net/
-https://ntlm.pw/
+| URL | Description |
+| --- | --- |
+| https://crackstation.net/ | |
+| https://ntlm.pw/ | |
 
 ## 🔻Common dictionnaries
 
 #### Weak password
-https://wiki.skullsecurity.org/index.php?title=Passwords - This includes the most well-known collections of passwords.
-SecLists - A huge collection of all kinds of lists, not only for password cracking.
+
+| URL | Description |
+| --- | --- |
+| https://wiki.skullsecurity.org/index.php?title=Passwords | This includes the most well-known collections of passwords. |
+|SecLists | A huge collection of all kinds of lists, not only for password cracking. |
 
 #### Leak password
-https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Databases
+
+| URL | Description |
+| --- | --- |
+| https://github.com/danielmiessler/SecLists/tree/master/Passwords/Leaked-Databases | |
 
 
 # 
