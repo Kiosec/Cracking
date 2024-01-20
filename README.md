@@ -282,9 +282,10 @@ T9
 #### Applied a john' rules base on an existing wordlist
 ```
 #Create a wordlist with only one password and expand it using a john rule based
---wordlist= to specify the wordlist or dictionary file. 
---rules to specify which rule or rules to use.
---stdout to print the output to the terminal.
+--wordlist : to specify the wordlist or dictionary file. 
+--rules : to specify which rule or rules to use.
+--stdout : to print the output to the terminal.
+
 kiosec@cyberlab$ john --wordlist=/tmp/my-single-password-list.txt --rules=KoreLogic --stdout
 <...>
 ```
