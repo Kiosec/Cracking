@@ -21,9 +21,15 @@
 * [1. Online cracking databases](#online-cracking-databases)
 
 
-##### ➤ Bruteforcing common services
+##### ➤ Bruteforcing and spraying attacks on common services
 
-* [1. FTP (port 21)](#online-cracking-databases)
+* [1. FTP (port 21)](#ftp-port-21)
+* [2. SSH (port 22)](#ssh-port-22)
+* [3. SMTP (port 25 - 465)](#smtp-port-25---465)
+* [4. Web login page](#web-login-page)
+* [5. RDP](#rdp)
+* [6. SMB](#smb)
+* [7. Outlook web access (OWA) portal](#outlook-web-access-owa-portal)
 
 # 
 # ⭕ Existing dictionnaries and password lists
