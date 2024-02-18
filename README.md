@@ -334,6 +334,9 @@ WIP
 user@machine$ hydra -l ftp -P passlist.txt ftp://10.10.x.x
 ```
 
+Example of default password list :
+https://github.com/danielmiessler/SecLists/blob/master/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt
+
 
 ## 🔻SSH (port 22)
 
