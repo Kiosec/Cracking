@@ -411,6 +411,8 @@ kiosec@cyberlab$:~# python3 RDPassSpray.py -U usernames-list.txt -p testPassword
 
 ## 🔻SMB (port 139 - 445)
 
+crackmapexec winrm 10.0.0.1 -u kiosec -p passwordlist.txt
+
 Tool: Metasploit (auxiliary/scanner/smb/smb_login)
 
 
