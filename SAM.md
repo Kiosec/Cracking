@@ -21,6 +21,8 @@ secretsdump.py -sam sam -security security -system system LOCAL
 git clone https://github.com/Tib3rius/creddump7
 pip3 install pycrypto
 python3 creddump7/pwdump.py SYSTEM SAM
+OR
+python3 creddump7/pwdump.py SYSTEM SAM > hashes.txt
 ```
 
 ## 3. Hash formats :
