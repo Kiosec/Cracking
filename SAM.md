@@ -11,11 +11,17 @@ reg save HKLM\SECURITY C:\temp\security
 
 ## 2. Extract the windows local password hashes:
 
+***Using secretsdump***
 ```
 secretsdump.py -sam sam -security security -system system LOCAL
 ```
 
-
+***Using creddump7***
+```
+git clone https://github.com/Tib3rius/creddump7
+pip3 install pycrypto
+python3 creddump7/pwdump.py SYSTEM SAM
+```
 
 ## 3. Hash formats :
 
