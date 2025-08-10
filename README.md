@@ -4,8 +4,9 @@
 
 ##### ➤ Existing dictionnaries and password lists
 
-* [1. Default passwords](#default-passwords)
-* [2. Common dictionnaries](#common-dictionnaries)
+* [1. Detect hashes types](#detect-hashes-types)
+* [2. Default passwords](#default-passwords)
+* [3. Common dictionnaries](#common-dictionnaries)
 
 ##### ➤ Wordlist generator
 
@@ -34,6 +35,10 @@
 # 
 # ⭕ Existing dictionnaries and password lists
 
+## 🔻Detect hashes types
+
+https://hashcat.net/wiki/doku.php?id=example_hashes
+https://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats
 
 ## 🔻Default passwords
 
