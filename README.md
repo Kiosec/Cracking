@@ -37,8 +37,35 @@
 
 ## 🔻Detect hashes types
 
+
+#### Using online ressources :
+
 https://hashcat.net/wiki/doku.php?id=example_hashes
+
 https://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats
+
+#### Using script :
+
+➤ Hashid
+
+<img width="753" height="175" alt="image" src="https://github.com/user-attachments/assets/03f05b57-b2c4-44df-a724-85382fc659bf" />
+
+➤ Hash-identifier
+
+<img width="907" height="360" alt="image" src="https://github.com/user-attachments/assets/ba548a62-f0e2-41b2-9d40-98f0acd7e5ae" />
+
+
+#### Example Bcrypt :
+
+➤ Unidentified hash
+kiosec:$2a$08$zyiNvVoP/UuSMgO2rKDtLuox.vYj.3hZPVYq3i4oG3/CtgET7CjjS
+
+➤ Detect hash format
+<img width="1312" height="189" alt="image" src="https://github.com/user-attachments/assets/4a2dbc6a-b1aa-419d-b922-8fc1e5f4d01d" />
+
+➤ Crack hash 
+hashcat -a 0 -m 3200 hash.txt rockyou.txt -w 3 -O
+
 
 ## 🔻Default passwords
 
