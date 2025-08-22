@@ -22,6 +22,10 @@
 * [1. Online cracking databases](#online-cracking-databases)
 
 
+##### ➤ Bruteforcing file type
+
+* [1. PDF file)](#pdf-file)
+
 ##### ➤ Bruteforcing and spraying attacks on common services
 
 * [1. FTP (port 21)](#ftp-port-21)
@@ -348,6 +352,15 @@ WIP
 | https://crackstation.net/ | |
 | https://ntlm.pw/ | |
 
+
+
+# 
+# ⭕ Bruteforce file type
+
+## 🔻PDF file
+```
+pdfcrack -f [pdf_file] -w [dico]
+```
 
 
 # 
