@@ -24,7 +24,7 @@
 
 ##### ➤ Bruteforcing file type
 
-* [1. PDF file)](#pdf-file)
+* [1. PDF file](#pdf-file)
 
 ##### ➤ Bruteforcing and spraying attacks on common services
 
