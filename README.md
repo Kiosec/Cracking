@@ -29,7 +29,7 @@
 ##### ➤ Crack popular hash
 
 * [1. Kerberoast hash](#kerberoast-hash)
-* [2. Netntlmv2/ntlmv2 hash](#-hash)
+* [2. Netntlmv2/ntlmv2 hash](#netntlmv2ntlmv2-hash)
 
 
 ##### ➤ Bruteforcing and spraying attacks on common services
