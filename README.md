@@ -29,7 +29,7 @@
 ##### ➤ Crack popular hash
 
 * [1. Kerberoast hash](#kerberoast-hash)
-
+* [2. Netntlmv2/ntlmv2 hash](#-hash)
 
 
 ##### ➤ Bruteforcing and spraying attacks on common services
@@ -423,8 +423,7 @@ hashcat -m 13100 kerberoast.hashes ~/.local/share/seclists/Passwords/Leaked-Data
 ```
 
 
-
-
+## 🔻Netntlmv2/ntlmv2 hash
 
 #### Example of ntlmv2 hash obtained with Responder
 ```
